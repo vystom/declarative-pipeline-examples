@@ -32,5 +32,14 @@ pipeline {
                 }
             }
         }
-    }   
+    
+     stage('Tisk parametru') {
+            steps {
+                script {
+                    println "vyber-choice = ${PARAMETER_01}" 
+                
+                }
+             }
+      }
+}   
 }
